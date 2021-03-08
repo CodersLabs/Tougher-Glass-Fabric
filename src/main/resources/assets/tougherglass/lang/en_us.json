@@ -2,6 +2,7 @@
 
   "block.tougherglass.stronger_glass_block": "Stronger Glass Block",
   "block.tougherglass.stronger_white_stained_glass_block" : "Stronger White Stained Glass Block",
-  "block.tougherglass.stronger_orange_stained_glass_block" : "Stronger Orange Stained Glass Block"
+  "block.tougherglass.stronger_orange_stained_glass_block" : "Stronger Orange Stained Glass Block",
+  "block.tougherglass.stronger_magenta_stained_glass_block" : "Stronger Magenta Stained Glass Block"
 
 }

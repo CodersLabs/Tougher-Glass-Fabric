@@ -10,10 +10,10 @@
       "item": "minecraft:obsidian"
     },
     "G": {
-      "item": "minecraft:white_stained_glass"
+      "item": "minecraft:magenta_stained_glass"
     }
   },
   "result": {
-    "item": "tougherglass:stronger_white_stained_glass_block"
+    "item": "tougherglass:stronger_magenta_stained_glass_block"
   }
 }
