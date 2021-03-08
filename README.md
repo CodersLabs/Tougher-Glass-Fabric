@@ -1,4 +1,4 @@
-# Fabric Example Mod
+# Tougher Glass Fabric
 
 ## License
 
