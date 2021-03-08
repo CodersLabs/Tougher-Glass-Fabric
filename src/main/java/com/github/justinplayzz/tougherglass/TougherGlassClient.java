@@ -13,6 +13,7 @@ public class TougherGlassClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(TougherGlassBlocks.STRONGER_GLASS_BLOCK, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(TougherGlassBlocks.STRONGER_WHITE_STAINED_GLASS_BLOCK, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(TougherGlassBlocks.STRONGER_ORANGE_STAINED_GLASS_BLOCK, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(TougherGlassBlocks.STRONGER_MAGENTA_STAINED_GLASS_BLOCK, RenderLayer.getTranslucent());
 
     }
 

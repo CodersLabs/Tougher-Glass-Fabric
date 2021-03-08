@@ -22,6 +22,8 @@ public class TougherGlassBlocks {
     public static final BlockItem STRONGER_WHITE_STAINED_GLASS_BLOCK_ITEM = new BlockItem(STRONGER_WHITE_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
     public static final GlassBlock STRONGER_ORANGE_STAINED_GLASS_BLOCK = new GlassBlock(FabricBlockSettings.copyOf(Blocks.ORANGE_STAINED_GLASS).strength(1F, 1200.0F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).nonOpaque());
     public static final BlockItem STRONGER_ORANGE_STAINED_GLASS_BLOCK_ITEM = new BlockItem(STRONGER_ORANGE_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+    public static final GlassBlock STRONGER_MAGENTA_STAINED_GLASS_BLOCK = new GlassBlock(FabricBlockSettings.copyOf(Blocks.MAGENTA_STAINED_GLASS).strength(1F, 1200.0F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).nonOpaque());
+    public static final BlockItem STRONGER_MAGENTA_STAINED_GLASS_BLOCK_ITEM = new BlockItem(STRONGER_MAGENTA_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
 
 
 
@@ -34,6 +36,8 @@ public class TougherGlassBlocks {
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "stronger_white_stained_glass_block"), STRONGER_WHITE_STAINED_GLASS_BLOCK_ITEM);
         Registry.register(Registry.BLOCK, new Identifier(MOD_ID,"stronger_orange_stained_glass_block"), STRONGER_ORANGE_STAINED_GLASS_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "stronger_orange_stained_glass_block"), STRONGER_ORANGE_STAINED_GLASS_BLOCK_ITEM);
+        Registry.register(Registry.BLOCK, new Identifier(MOD_ID,"stronger_magenta_stained_glass_block"), STRONGER_MAGENTA_STAINED_GLASS_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "stronger_magenta_stained_glass_block"), STRONGER_MAGENTA_STAINED_GLASS_BLOCK_ITEM);
 
     }
 
