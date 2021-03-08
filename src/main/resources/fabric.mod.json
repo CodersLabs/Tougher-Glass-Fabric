@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "tougherglass",
+  "version": "${version}",
+
+  "name": "Tougher Glass",
+  "description": "This is an mod that add's blast resistance glass.",
+  "authors": [
+    "JustinPlayzz"
+  ],
+  "contributors": [
+    "StevenPlayzz"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "gpl-3.0",
+  "icon": "assets/tougherglass/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.justinplayzz.tougherglass.TougherGlass"
+    ],
+    "client": [
+      "com.github.justinplayzz.tougherglass.TougherGlassClient"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

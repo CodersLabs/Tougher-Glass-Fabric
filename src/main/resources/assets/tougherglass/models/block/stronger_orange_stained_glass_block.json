@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "tougherglass:block/stronger_orange_stained_glass_block"
+  }
+}
