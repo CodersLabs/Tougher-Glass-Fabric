@@ -19,4 +19,6 @@ public class TougherGlassClient implements ClientModInitializer {
 
     }
 
+    //TODO: lime, pink, gray, light gray, cyan, purple, blue, brown, green, red, black glass
+
 }
