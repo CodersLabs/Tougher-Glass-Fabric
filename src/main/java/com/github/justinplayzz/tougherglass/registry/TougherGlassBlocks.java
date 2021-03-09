@@ -1,11 +1,9 @@
 package com.github.justinplayzz.tougherglass.registry;
 
+import com.github.justinplayzz.tougherglass.json.MainGenerator;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.GlassBlock;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -16,40 +14,30 @@ import static com.github.justinplayzz.tougherglass.TougherGlass.MOD_ID;
 
 public class TougherGlassBlocks {
 
-    public static final GlassBlock STRONGER_GLASS_BLOCK = new GlassBlock(FabricBlockSettings.copyOf(Blocks.GLASS).strength(1F, 1200.0F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).nonOpaque());
-    public static final BlockItem STRONGER_GLASS_BLOCK_ITEM = new BlockItem(STRONGER_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
-    public static final GlassBlock STRONGER_WHITE_STAINED_GLASS_BLOCK = new GlassBlock(FabricBlockSettings.copyOf(Blocks.WHITE_STAINED_GLASS).strength(1F, 1200.0F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).nonOpaque());
-    public static final BlockItem STRONGER_WHITE_STAINED_GLASS_BLOCK_ITEM = new BlockItem(STRONGER_WHITE_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
-    public static final GlassBlock STRONGER_ORANGE_STAINED_GLASS_BLOCK = new GlassBlock(FabricBlockSettings.copyOf(Blocks.ORANGE_STAINED_GLASS).strength(1F, 1200.0F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).nonOpaque());
-    public static final BlockItem STRONGER_ORANGE_STAINED_GLASS_BLOCK_ITEM = new BlockItem(STRONGER_ORANGE_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
-    public static final GlassBlock STRONGER_MAGENTA_STAINED_GLASS_BLOCK = new GlassBlock(FabricBlockSettings.copyOf(Blocks.MAGENTA_STAINED_GLASS).strength(1F, 1200.0F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).nonOpaque());
-    public static final BlockItem STRONGER_MAGENTA_STAINED_GLASS_BLOCK_ITEM = new BlockItem(STRONGER_MAGENTA_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
-    public static final GlassBlock STRONGER_LIGHT_BLUE_STAINED_GLASS_BLOCK = new GlassBlock(FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_STAINED_GLASS).strength(1F, 1200.0F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).nonOpaque());
-    public static final BlockItem STRONGER_LIGHT_BLUE_STAINED_GLASS_BLOCK_ITEM = new BlockItem(STRONGER_LIGHT_BLUE_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
-    public static final GlassBlock STRONGER_YELLOW_STAINED_GLASS_BLOCK = new GlassBlock(FabricBlockSettings.copyOf(Blocks.YELLOW_STAINED_GLASS).strength(1F, 1200.0F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).nonOpaque());
-    public static final BlockItem STRONGER_YELLOW_STAINED_GLASS_BLOCK_ITEM = new BlockItem(STRONGER_YELLOW_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
-    public static final GlassBlock STRONGER_LIME_STAINED_GLASS_BLOCK = new GlassBlock(FabricBlockSettings.copyOf(Blocks.LIME_STAINED_GLASS).strength(1F, 1200.0F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).nonOpaque());
-    public static final BlockItem STRONGER_LIME_STAINED_GLASS_BLOCK_ITEM = new BlockItem(STRONGER_LIME_STAINED_GLASS_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+    private static final MainGenerator generator = new MainGenerator(MOD_ID);
 
+    public static GlassBlock STRONGER_GLASS_BLOCK = generator.block.registerBlandBlock(new GlassBlock(Properties.STRONGER_GLASS), "stronger_glass_block","");
+    public static GlassBlock STRONGER_WHITE_STAINED_GLASS_BLOCK = generator.block.registerBlandBlock(new GlassBlock(Properties.STRONGER_GLASS), "stronger_white_glass_block", "");
+    public static GlassBlock STRONGER_ORANGE_STAINED_GLASS_BLOCK = generator.block.registerBlandBlock(new GlassBlock(Properties.STRONGER_GLASS), "stronger_orange_glass_block", "");
+    public static GlassBlock STRONGER_MAGENTA_STAINED_GLASS_BLOCK = generator.block.registerBlandBlock(new GlassBlock(Properties.STRONGER_GLASS), "stronger_magenta_glass_block", "");
+    public static GlassBlock STRONGER_LIGHT_BLUE_STAINED_GLASS_BLOCK = generator.block.registerBlandBlock(new GlassBlock(Properties.STRONGER_GLASS), "stronger_light_blue_glass_block", "");
+    public static GlassBlock STRONGER_YELLOW_STAINED_GLASS_BLOCK = generator.block.registerBlandBlock(new GlassBlock(Properties.STRONGER_GLASS), "stronger_yellow_glass_block", "");
+    public static GlassBlock STRONGER_LIME_STAINED_GLASS_BLOCK = generator.block.registerBlandBlock(new GlassBlock(Properties.STRONGER_GLASS), "stronger_lime_glass_block", "");
+    public static GlassBlock STRONGER_PINK_STAINED_GLASS_BLOCK = generator.block.registerBlandBlock(new GlassBlock(Properties.STRONGER_GLASS), "stronger_pink_glass_block", "");
+    public static GlassBlock STRONGER_GRAY_STAINED_GLASS_BLOCK = generator.block.registerBlandBlock(new GlassBlock(Properties.STRONGER_GLASS), "stronger_gray_glass_block", "");
+    public static GlassBlock STRONGER_LIGHT_GRAY_STAINED_GLASS_BLOCK = generator.block.registerBlandBlock(new GlassBlock(Properties.STRONGER_GLASS), "stronger_light_gray_glass_block", "");
+    public static GlassBlock STRONGER_CYAN_STAINED_GLASS_BLOCK = generator.block.registerBlandBlock(new GlassBlock(Properties.STRONGER_GLASS), "stronger_cyan_glass_block", "");
+    public static GlassBlock STRONGER_PURPLE_STAINED_GLASS_BLOCK = generator.block.registerBlandBlock(new GlassBlock(Properties.STRONGER_GLASS), "stronger_purple_glass_block", "");
+    public static GlassBlock STRONGER_BLUE_STAINED_GLASS_BLOCK = generator.block.registerBlandBlock(new GlassBlock(Properties.STRONGER_GLASS), "stronger_blue_glass_block", "");
+    public static GlassBlock STRONGER_BROWN_STAINED_GLASS_BLOCK = generator.block.registerBlandBlock(new GlassBlock(Properties.STRONGER_GLASS), "stronger_brown_glass_block", "");
+    public static GlassBlock STRONGER_GREEN_STAINED_GLASS_BLOCK = generator.block.registerBlandBlock(new GlassBlock(Properties.STRONGER_GLASS), "stronger_green_glass_block", "");
+    public static GlassBlock STRONGER_RED_STAINED_GLASS_BLOCK = generator.block.registerBlandBlock(new GlassBlock(Properties.STRONGER_GLASS), "stronger_red_glass_block", "");
+    public static GlassBlock STRONGER_BLACK_STAINED_GLASS_BLOCK = generator.block.registerBlandBlock(new GlassBlock(Properties.STRONGER_GLASS), "stronger_black_glass_block", "");
 
+    public static void RegistryTougherGlassBlocks(){}
 
-
-    public static void RegistryTougherGlassBlocks(){
-
-        Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "stronger_glass_block"), STRONGER_GLASS_BLOCK);
-        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "stronger_glass_block"), STRONGER_GLASS_BLOCK_ITEM);
-        Registry.register(Registry.BLOCK, new Identifier(MOD_ID,"stronger_white_stained_glass_block"), STRONGER_WHITE_STAINED_GLASS_BLOCK);
-        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "stronger_white_stained_glass_block"), STRONGER_WHITE_STAINED_GLASS_BLOCK_ITEM);
-        Registry.register(Registry.BLOCK, new Identifier(MOD_ID,"stronger_orange_stained_glass_block"), STRONGER_ORANGE_STAINED_GLASS_BLOCK);
-        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "stronger_orange_stained_glass_block"), STRONGER_ORANGE_STAINED_GLASS_BLOCK_ITEM);
-        Registry.register(Registry.BLOCK, new Identifier(MOD_ID,"stronger_magenta_stained_glass_block"), STRONGER_MAGENTA_STAINED_GLASS_BLOCK);
-        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "stronger_magenta_stained_glass_block"), STRONGER_MAGENTA_STAINED_GLASS_BLOCK_ITEM);
-        Registry.register(Registry.BLOCK, new Identifier(MOD_ID,"stronger_light_blue_stained_glass_block"), STRONGER_LIGHT_BLUE_STAINED_GLASS_BLOCK);
-        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "stronger_light_blue_stained_glass_block"), STRONGER_LIGHT_BLUE_STAINED_GLASS_BLOCK_ITEM);
-        Registry.register(Registry.BLOCK, new Identifier(MOD_ID,"stronger_yellow_stained_glass_block"), STRONGER_YELLOW_STAINED_GLASS_BLOCK);
-        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "stronger_yellow_stained_glass_block"), STRONGER_YELLOW_STAINED_GLASS_BLOCK_ITEM);
-        Registry.register(Registry.BLOCK, new Identifier(MOD_ID,"stronger_lime_stained_glass_block"), STRONGER_LIME_STAINED_GLASS_BLOCK);
-        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "stronger_lime_stained_glass_block"), STRONGER_LIME_STAINED_GLASS_BLOCK_ITEM);
+    public static class Properties {
+        public static FabricBlockSettings STRONGER_GLASS = FabricBlockSettings.copyOf(Blocks.GLASS).strength(1F, 1200.0F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).nonOpaque();
     }
 
 }
