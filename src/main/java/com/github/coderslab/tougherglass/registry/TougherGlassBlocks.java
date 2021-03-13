@@ -3,7 +3,9 @@ package com.github.coderslab.tougherglass.registry;
 import com.github.evoslab.cookiecore.datagen.MainGenerator;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
-import net.minecraft.block.*;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.GlassBlock;
+import net.minecraft.block.StainedGlassBlock;
 import net.minecraft.util.DyeColor;
 
 import static com.github.coderslab.tougherglass.TougherGlass.MOD_ID;
