@@ -6,7 +6,7 @@
   "name": "Tougher Glass",
   "description": "This is an mod that add's blast resistance glass.",
   "authors": [
-    "JustinPlayzz"
+    "Coderslab"
   ],
   "contributors": [
     "StevenPlayzz"
@@ -22,10 +22,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.github.justinplayzz.tougherglass.TougherGlass"
+      "com.github.coderslab.tougherglass.TougherGlass"
     ],
     "client": [
-      "com.github.justinplayzz.tougherglass.TougherGlassClient"
+      "com.github.coderslab.tougherglass.TougherGlassClient"
     ]
   },
   "mixins": [

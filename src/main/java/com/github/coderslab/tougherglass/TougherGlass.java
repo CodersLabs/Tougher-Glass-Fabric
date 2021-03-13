@@ -1,7 +1,8 @@
-package com.github.justinplayzz.tougherglass;
+package com.github.coderslab.tougherglass;
 
-import com.github.justinplayzz.tougherglass.registry.TougherGlassBlocks;
+import com.github.coderslab.tougherglass.registry.TougherGlassBlocks;
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.util.Identifier;
 
 public class TougherGlass implements ModInitializer {
 
@@ -14,5 +15,10 @@ public class TougherGlass implements ModInitializer {
         TougherGlassBlocks.RegistryTougherGlassBlocks();
 
     }
+
+    public static Identifier id(String path) {
+        return new Identifier(MOD_ID, path);
+    }
+
 
 }

@@ -19,15 +19,21 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
-	// You may need to force-disable transitiveness on them.
 	//ARRP
 	modImplementation group: 'net.devtech', name: 'arrp', version: '0.3.7'
+
+	//Cookie Core
+	modImplementation group: 'com.github.evoslab', name: 'cookiecore', version: '0.0.3'
 }
 
 repositories {
+	//ARRP Maven
 	maven {
 		url = 'https://raw.githubusercontent.com/Devan-Kerman/Devan-Repo/master/'
+	}
+	//Cookie Core Maven
+	maven {
+		url = 'https://raw.githubusercontent.com/Evoslab/Evoslab-Maven-Repo/master/'
 	}
 }
 
