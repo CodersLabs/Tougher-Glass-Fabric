@@ -12,7 +12,7 @@ public class TougherGlass implements ModInitializer {
     public void onInitialize() {
 
         new TougherGlassBlocks();
-        TougherGlassBlocks.RegistryTougherGlassBlocks();
+        TougherGlassBlocks.init();
 
     }
 
