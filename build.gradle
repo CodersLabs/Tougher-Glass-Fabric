@@ -23,7 +23,7 @@ dependencies {
 	modImplementation group: 'net.devtech', name: 'arrp', version: '0.3.7'
 
 	//Cookie Core
-	modImplementation group: 'com.github.evoslab', name: 'cookiecore', version: '0.0.3'
+	modImplementation group: 'com.github.evoslab', name: 'cookiecore', version: '0.0.4'
 }
 
 repositories {
