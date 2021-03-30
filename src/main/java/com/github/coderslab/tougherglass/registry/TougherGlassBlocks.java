@@ -14,49 +14,49 @@ public class TougherGlassBlocks {
 
     private static final MainGenerator generator = new MainGenerator(MOD_ID);
 
-    public static GlassBlock STRONGER_GLASS_BLOCK;
+    public static GlassBlock REINFORCED_GLASS;
 
-    public static StainedGlassBlock STRONGER_WHITE_STAINED_GLASS_BLOCK;
-    public static StainedGlassBlock STRONGER_ORANGE_STAINED_GLASS_BLOCK;
-    public static StainedGlassBlock STRONGER_MAGENTA_STAINED_GLASS_BLOCK;
-    public static StainedGlassBlock STRONGER_LIGHT_BLUE_STAINED_GLASS_BLOCK;
-    public static StainedGlassBlock STRONGER_YELLOW_STAINED_GLASS_BLOCK;
-    public static StainedGlassBlock STRONGER_LIME_STAINED_GLASS_BLOCK;
-    public static StainedGlassBlock STRONGER_PINK_STAINED_GLASS_BLOCK;
-    public static StainedGlassBlock STRONGER_GRAY_STAINED_GLASS_BLOCK;
-    public static StainedGlassBlock STRONGER_LIGHT_GRAY_STAINED_GLASS_BLOCK;
-    public static StainedGlassBlock STRONGER_CYAN_STAINED_GLASS_BLOCK;
-    public static StainedGlassBlock STRONGER_PURPLE_STAINED_GLASS_BLOCK;
-    public static StainedGlassBlock STRONGER_BLUE_STAINED_GLASS_BLOCK;
-    public static StainedGlassBlock STRONGER_BROWN_STAINED_GLASS_BLOCK;
-    public static StainedGlassBlock STRONGER_GREEN_STAINED_GLASS_BLOCK;
-    public static StainedGlassBlock STRONGER_RED_STAINED_GLASS_BLOCK;
-    public static StainedGlassBlock STRONGER_BLACK_STAINED_GLASS_BLOCK;
+    public static StainedGlassBlock REINFORCED_WHITE_STAINED_GLASS;
+    public static StainedGlassBlock REINFORCED_ORANGE_STAINED_GLASS;
+    public static StainedGlassBlock REINFORCED_MAGENTA_STAINED_GLASS;
+    public static StainedGlassBlock REINFORCED_LIGHT_BLUE_STAINED_GLASS;
+    public static StainedGlassBlock REINFORCED_YELLOW_STAINED_GLASS;
+    public static StainedGlassBlock REINFORCED_LIME_STAINED_GLASS;
+    public static StainedGlassBlock REINFORCED_PINK_STAINED_GLASS;
+    public static StainedGlassBlock REINFORCED_GRAY_STAINED_GLASS;
+    public static StainedGlassBlock REINFORCED_LIGHT_GRAY_STAINED_GLASS;
+    public static StainedGlassBlock REINFORCED_CYAN_STAINED_GLASS;
+    public static StainedGlassBlock REINFORCED_PURPLE_STAINED_GLASS;
+    public static StainedGlassBlock REINFORCED_BLUE_STAINED_GLASS;
+    public static StainedGlassBlock REINFORCED_BROWN_STAINED_GLASS;
+    public static StainedGlassBlock REINFORCED_GREEN_STAINED_GLASS;
+    public static StainedGlassBlock REINFORCED_RED_STAINED_GLASS;
+    public static StainedGlassBlock REINFORCED_BLACK_STAINED_GLASS;
 
     public static void init(){
 
-        STRONGER_GLASS_BLOCK = generator.block.registerAllSidedBlock(new GlassBlock(Properties.STRONGER_GLASS), "stronger_glass_block","Stronger Glass Block");
-        STRONGER_WHITE_STAINED_GLASS_BLOCK = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.WHITE, Properties.STRONGER_GLASS), "stronger_white_stained_glass_block", "Stronger White Stained Glass Block");
-        STRONGER_ORANGE_STAINED_GLASS_BLOCK = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.ORANGE, Properties.STRONGER_GLASS), "stronger_orange_stained_glass_block", "Stronger Orange Stained Glass Block");
-        STRONGER_MAGENTA_STAINED_GLASS_BLOCK = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.MAGENTA, Properties.STRONGER_GLASS), "stronger_magenta_stained_glass_block", "Stronger Magenta Stained Glass Block");
-        STRONGER_LIGHT_BLUE_STAINED_GLASS_BLOCK = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.LIGHT_BLUE, Properties.STRONGER_GLASS), "stronger_light_blue_stained_glass_block", "Stronger Light blue Stained Glass Block");
-        STRONGER_YELLOW_STAINED_GLASS_BLOCK = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.YELLOW, Properties.STRONGER_GLASS), "stronger_yellow_stained_glass_block", "Stronger Yellow Stained Glass Block");
-        STRONGER_LIME_STAINED_GLASS_BLOCK = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.LIME, Properties.STRONGER_GLASS), "stronger_lime_stained_glass_block", "Stronger Lime Stained Glass Block");
-        STRONGER_PINK_STAINED_GLASS_BLOCK = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.PINK, Properties.STRONGER_GLASS), "stronger_pink_stained_glass_block", "Stronger Pink Stained Glass Block");
-        STRONGER_GRAY_STAINED_GLASS_BLOCK = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.GRAY, Properties.STRONGER_GLASS), "stronger_gray_stained_glass_block", "Stronger Gray Stained Glass Block");
-        STRONGER_LIGHT_GRAY_STAINED_GLASS_BLOCK = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.LIGHT_GRAY, Properties.STRONGER_GLASS), "stronger_light_gray_stained_glass_block", "Stronger Light gray Stained Glass Block");
-        STRONGER_CYAN_STAINED_GLASS_BLOCK = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.CYAN, Properties.STRONGER_GLASS), "stronger_cyan_stained_glass_block", "Stronger Cyan Stained Glass Block");
-        STRONGER_PURPLE_STAINED_GLASS_BLOCK = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.PURPLE, Properties.STRONGER_GLASS), "stronger_purple_stained_glass_block", "Stronger Purple Stained Glass Block");
-        STRONGER_BLUE_STAINED_GLASS_BLOCK = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.BLUE, Properties.STRONGER_GLASS), "stronger_blue_stained_glass_block", "Stronger Blue Stained Glass Block");
-        STRONGER_BROWN_STAINED_GLASS_BLOCK = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.BROWN, Properties.STRONGER_GLASS), "stronger_brown_stained_glass_block", "Stronger Brown Stained Glass Block");
-        STRONGER_GREEN_STAINED_GLASS_BLOCK = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.GREEN, Properties.STRONGER_GLASS), "stronger_green_stained_glass_block", "Stronger Green Stained Glass Block");
-        STRONGER_RED_STAINED_GLASS_BLOCK = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.RED, Properties.STRONGER_GLASS), "stronger_red_stained_glass_block", "Stronger Red Stained Glass Block");
-        STRONGER_BLACK_STAINED_GLASS_BLOCK = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.BLACK, Properties.STRONGER_GLASS), "stronger_black_stained_glass_block", "Stronger Black Stained Glass Block");
+        REINFORCED_GLASS = generator.block.registerAllSidedBlock(new GlassBlock(Properties.REINFORCED_GLASS), "reinforced_glass","Reinforced Glass Block");
+        REINFORCED_WHITE_STAINED_GLASS = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.WHITE, Properties.REINFORCED_GLASS), "reinforced_white_stained_glass", "Reinforced White Stained Glass Block");
+        REINFORCED_ORANGE_STAINED_GLASS = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.ORANGE, Properties.REINFORCED_GLASS), "reinforced_orange_stained_glass", "Reinforced Orange Stained Glass Block");
+        REINFORCED_MAGENTA_STAINED_GLASS = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.MAGENTA, Properties.REINFORCED_GLASS), "reinforced_magenta_stained_glass", "Reinforced Magenta Stained Glass Block");
+        REINFORCED_LIGHT_BLUE_STAINED_GLASS = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.LIGHT_BLUE, Properties.REINFORCED_GLASS), "reinforced_light_blue_stained_glass", "Reinforced Light blue Stained Glass Block");
+        REINFORCED_YELLOW_STAINED_GLASS = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.YELLOW, Properties.REINFORCED_GLASS), "reinforced_yellow_stained_glass", "Reinforced Yellow Stained Glass Block");
+        REINFORCED_LIME_STAINED_GLASS = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.LIME, Properties.REINFORCED_GLASS), "reinforced_lime_stained_glass", "Reinforced Lime Stained Glass Block");
+        REINFORCED_PINK_STAINED_GLASS = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.PINK, Properties.REINFORCED_GLASS), "reinforced_pink_stained_glass", "Reinforced Pink Stained Glass Block");
+        REINFORCED_GRAY_STAINED_GLASS = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.GRAY, Properties.REINFORCED_GLASS), "reinforced_gray_stained_glass", "Reinforced Gray Stained Glass Block");
+        REINFORCED_LIGHT_GRAY_STAINED_GLASS = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.LIGHT_GRAY, Properties.REINFORCED_GLASS), "reinforced_light_gray_stained_glass", "Reinforced Light gray Stained Glass Block");
+        REINFORCED_CYAN_STAINED_GLASS = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.CYAN, Properties.REINFORCED_GLASS), "reinforced_cyan_stained_glass", "Reinforced Cyan Stained Glass Block");
+        REINFORCED_PURPLE_STAINED_GLASS = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.PURPLE, Properties.REINFORCED_GLASS), "reinforced_purple_stained_glass", "Reinforced Purple Stained Glass Block");
+        REINFORCED_BLUE_STAINED_GLASS = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.BLUE, Properties.REINFORCED_GLASS), "reinforced_blue_stained_glass", "Reinforced Blue Stained Glass Block");
+        REINFORCED_BROWN_STAINED_GLASS = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.BROWN, Properties.REINFORCED_GLASS), "reinforced_brown_stained_glass", "Reinforced Brown Stained Glass Block");
+        REINFORCED_GREEN_STAINED_GLASS = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.GREEN, Properties.REINFORCED_GLASS), "reinforced_green_stained_glass", "Reinforced Green Stained Glass Block");
+        REINFORCED_RED_STAINED_GLASS = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.RED, Properties.REINFORCED_GLASS), "reinforced_red_stained_glass", "Reinforced Red Stained Glass Block");
+        REINFORCED_BLACK_STAINED_GLASS = generator.block.registerAllSidedBlock(new StainedGlassBlock(DyeColor.BLACK, Properties.REINFORCED_GLASS), "reinforced_black_stained_glass", "Reinforced Black Stained Glass Block");
 
     }
 
     public static class Properties {
-        public static FabricBlockSettings STRONGER_GLASS = FabricBlockSettings.copyOf(Blocks.GLASS).strength(1F, 1200.0F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).nonOpaque();
+        public static FabricBlockSettings REINFORCED_GLASS = FabricBlockSettings.copyOf(Blocks.GLASS).strength(1F, 1200.0F).requiresTool().breakByTool(FabricToolTags.PICKAXES, 3).nonOpaque();
     }
 
 }

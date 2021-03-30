@@ -12,8 +12,9 @@
     "StevenPlayzz"
   ],
   "contact": {
-    "homepage": "",
-    "sources": ""
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/tougher-glass-fabric",
+    "sources": "https://github.com/CodersLabs/Tougher-Glass-Fabric",
+    "issues": "https://github.com/CodersLabs/Tougher-Glass-Fabric/issues"
   },
 
   "license": "gpl-3.0",
