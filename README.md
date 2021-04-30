@@ -4,4 +4,4 @@
 
 This mod is available under the GPL-3.0 license.
 
-This mod requires [CookieCore](https://www.curseforge.com/minecraft/mc-mods/cookie-core-fabric)
+This mod requires [cookiecore 0.0.5](https://www.curseforge.com/minecraft/mc-mods/cookie-core-fabric)
